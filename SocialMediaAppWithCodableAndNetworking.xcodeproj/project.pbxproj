@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BAE2573945A00EFE027 /* AppDelegate.swift */; };
 		17DC6BB12573945A00EFE027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB02573945A00EFE027 /* SceneDelegate.swift */; };
-		17DC6BB32573945A00EFE027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB22573945A00EFE027 /* ViewController.swift */; };
-		17DC6BB62573945A00EFE027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB42573945A00EFE027 /* Main.storyboard */; };
+		17DC6BB32573945A00EFE027 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB22573945A00EFE027 /* HomeViewController.swift */; };
+		17DC6BB62573945A00EFE027 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB42573945A00EFE027 /* Home.storyboard */; };
 		17DC6BB82573945A00EFE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB72573945A00EFE027 /* Assets.xcassets */; };
 		17DC6BBB2573945A00EFE027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */; };
 		17DC6BC62573945A00EFE027 /* SocialMediaAppWithCodableAndNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BC52573945A00EFE027 /* SocialMediaAppWithCodableAndNetworkingTests.swift */; };
@@ -38,8 +38,8 @@
 		17DC6BAB2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaAppWithCodableAndNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DC6BAE2573945A00EFE027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17DC6BB02573945A00EFE027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17DC6BB22573945A00EFE027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17DC6BB52573945A00EFE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17DC6BB22573945A00EFE027 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17DC6BB52573945A00EFE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		17DC6BB72573945A00EFE027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DC6BBA2573945A00EFE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DC6BBC2573945A00EFE027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +99,9 @@
 		17DC6BAD2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				17DC6BAE2573945A00EFE027 /* AppDelegate.swift */,
-				17DC6BB02573945A00EFE027 /* SceneDelegate.swift */,
-				17DC6BB22573945A00EFE027 /* ViewController.swift */,
-				17DC6BB42573945A00EFE027 /* Main.storyboard */,
-				17DC6BB72573945A00EFE027 /* Assets.xcassets */,
-				17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */,
-				17DC6BBC2573945A00EFE027 /* Info.plist */,
+				17DC6BE3257394BC00EFE027 /* Resources */,
+				17DC6BE2257394AE00EFE027 /* Storyboards */,
+				17DC6BE12573949C00EFE027 /* ViewControllers */,
 			);
 			path = SocialMediaAppWithCodableAndNetworking;
 			sourceTree = "<group>";
@@ -126,6 +122,34 @@
 				17DC6BD22573945B00EFE027 /* Info.plist */,
 			);
 			path = SocialMediaAppWithCodableAndNetworkingUITests;
+			sourceTree = "<group>";
+		};
+		17DC6BE12573949C00EFE027 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17DC6BB22573945A00EFE027 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17DC6BE2257394AE00EFE027 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				17DC6BB42573945A00EFE027 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		17DC6BE3257394BC00EFE027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17DC6BAE2573945A00EFE027 /* AppDelegate.swift */,
+				17DC6BB02573945A00EFE027 /* SceneDelegate.swift */,
+				17DC6BBC2573945A00EFE027 /* Info.plist */,
+				17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */,
+				17DC6BB72573945A00EFE027 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +257,7 @@
 			files = (
 				17DC6BBB2573945A00EFE027 /* LaunchScreen.storyboard in Resources */,
 				17DC6BB82573945A00EFE027 /* Assets.xcassets in Resources */,
-				17DC6BB62573945A00EFE027 /* Main.storyboard in Resources */,
+				17DC6BB62573945A00EFE027 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DC6BB32573945A00EFE027 /* ViewController.swift in Sources */,
+				17DC6BB32573945A00EFE027 /* HomeViewController.swift in Sources */,
 				17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */,
 				17DC6BB12573945A00EFE027 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,12 +320,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17DC6BB42573945A00EFE027 /* Main.storyboard */ = {
+		17DC6BB42573945A00EFE027 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				17DC6BB52573945A00EFE027 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */ = {
@@ -438,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = SocialMediaAppWithCodableAndNetworking/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialMediaAppWithCodableAndNetworking/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = SocialMediaAppWithCodableAndNetworking/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialMediaAppWithCodableAndNetworking/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
