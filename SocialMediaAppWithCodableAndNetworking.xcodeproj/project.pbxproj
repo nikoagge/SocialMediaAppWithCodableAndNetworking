@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A79387257399130004F074 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A79386257399130004F074 /* Friend.swift */; };
+		17A7938C2573A2680004F074 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7938B2573A2680004F074 /* Connection.swift */; };
 		17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BAE2573945A00EFE027 /* AppDelegate.swift */; };
 		17DC6BB12573945A00EFE027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB02573945A00EFE027 /* SceneDelegate.swift */; };
-		17DC6BB32573945A00EFE027 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB22573945A00EFE027 /* HomeViewController.swift */; };
+		17DC6BB32573945A00EFE027 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BB22573945A00EFE027 /* HomeTableViewController.swift */; };
 		17DC6BB62573945A00EFE027 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB42573945A00EFE027 /* Home.storyboard */; };
 		17DC6BB82573945A00EFE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB72573945A00EFE027 /* Assets.xcassets */; };
 		17DC6BBB2573945A00EFE027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */; };
@@ -35,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17A79386257399130004F074 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		17A7938B2573A2680004F074 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		17DC6BAB2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaAppWithCodableAndNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DC6BAE2573945A00EFE027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17DC6BB02573945A00EFE027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17DC6BB22573945A00EFE027 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17DC6BB22573945A00EFE027 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		17DC6BB52573945A00EFE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		17DC6BB72573945A00EFE027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DC6BBA2573945A00EFE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A7937D257398E00004F074 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17A79386257399130004F074 /* Friend.swift */,
+				17A7938B2573A2680004F074 /* Connection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		17DC6BA22573945A00EFE027 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		17DC6BAD2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				17A7937D257398E00004F074 /* Models */,
 				17DC6BE3257394BC00EFE027 /* Resources */,
 				17DC6BE2257394AE00EFE027 /* Storyboards */,
 				17DC6BE12573949C00EFE027 /* ViewControllers */,
@@ -127,7 +141,7 @@
 		17DC6BE12573949C00EFE027 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				17DC6BB22573945A00EFE027 /* HomeViewController.swift */,
+				17DC6BB22573945A00EFE027 /* HomeTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +230,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = NAPPS;
 				TargetAttributes = {
 					17DC6BAA2573945A00EFE027 = {
 						CreatedOnToolsVersion = 12.2;
@@ -282,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DC6BB32573945A00EFE027 /* HomeViewController.swift in Sources */,
+				17DC6BB32573945A00EFE027 /* HomeTableViewController.swift in Sources */,
 				17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */,
+				17A7938C2573A2680004F074 /* Connection.swift in Sources */,
 				17DC6BB12573945A00EFE027 /* SceneDelegate.swift in Sources */,
+				17A79387257399130004F074 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
