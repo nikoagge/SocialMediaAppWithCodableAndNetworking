@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179E6FD12573DB290011E708 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E6FD02573DB290011E708 /* JSONDecoderExtension.swift */; };
+		179E6FD92573EDB90011E708 /* FriendsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E6FD82573EDB90011E708 /* FriendsDataSource.swift */; };
 		17A79387257399130004F074 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A79386257399130004F074 /* Friend.swift */; };
 		17A7938C2573A2680004F074 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7938B2573A2680004F074 /* Connection.swift */; };
 		17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC6BAE2573945A00EFE027 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		179E6FD02573DB290011E708 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		179E6FD82573EDB90011E708 /* FriendsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDataSource.swift; sourceTree = "<group>"; };
 		17A79386257399130004F074 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		17A7938B2573A2680004F074 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		17DC6BAB2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaAppWithCodableAndNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179E6FCF2573DB1A0011E708 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				179E6FD02573DB290011E708 /* JSONDecoderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		17A7937D257398E00004F074 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		17DC6BAD2573945A00EFE027 /* SocialMediaAppWithCodableAndNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				179E6FCF2573DB1A0011E708 /* Extensions */,
 				17A7937D257398E00004F074 /* Models */,
 				17DC6BE3257394BC00EFE027 /* Resources */,
 				17DC6BE2257394AE00EFE027 /* Storyboards */,
@@ -162,6 +175,7 @@
 				17DC6BBC2573945A00EFE027 /* Info.plist */,
 				17DC6BB92573945A00EFE027 /* LaunchScreen.storyboard */,
 				17DC6BB72573945A00EFE027 /* Assets.xcassets */,
+				179E6FD82573EDB90011E708 /* FriendsDataSource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -299,7 +313,9 @@
 			files = (
 				17DC6BB32573945A00EFE027 /* HomeTableViewController.swift in Sources */,
 				17DC6BAF2573945A00EFE027 /* AppDelegate.swift in Sources */,
+				179E6FD12573DB290011E708 /* JSONDecoderExtension.swift in Sources */,
 				17A7938C2573A2680004F074 /* Connection.swift in Sources */,
+				179E6FD92573EDB90011E708 /* FriendsDataSource.swift in Sources */,
 				17DC6BB12573945A00EFE027 /* SceneDelegate.swift in Sources */,
 				17A79387257399130004F074 /* Friend.swift in Sources */,
 			);

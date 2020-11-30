@@ -21,6 +21,10 @@ struct Friend: Codable {
     let tags: [String]
     let friends: [Connection]
     
+    var friendsList: String {
+        return friends.map { $0.name }.joined(separator: ", ")
+    }
+    
     enum CodingKeys: String, CodingKey {
         case uuid = "id"
         case isActive
@@ -33,5 +37,15 @@ struct Friend: Codable {
         case registered
         case tags
         case friends
+    }
+}
+
+extension Array where Element == Friend {
+    func matching(_ text: String?) -> [Friend] {
+        if let text = text, text.count > 0 {
+            return self.filter { $0.name.contains(text) || $0.company.contains(text) || $0.address.contains(text) }
+        } else {
+            return self
+        }
     }
 }
